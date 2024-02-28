@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\InventarioController;
+use App\Http\Controllers\ProductController;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/formularioProducto',[ProductController::class,'create']);
+Route::post('/crearProducto',[ProductController::class,'store'])->name('product.store');
+
+Route::get('/formularioInventario',[InventarioController::class,'create']);
+Route::post('/crearInventario',[InventarioController::class,'store'])->name('inventario.store');

@@ -20,7 +20,7 @@
 </label>
 <br>
 <label>
-    Ingrese el precio del producto: :
+    Ingrese el precio del producto: 
     <br>
     <input type="number" name="price">
 </label>

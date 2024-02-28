@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\InventarioController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\VentaController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,7 @@ Route::get('/formularioProducto',[ProductController::class,'create']);
 Route::post('/crearProducto',[ProductController::class,'store'])->name('product.store');
 
 Route::get('/formularioInventario',[InventarioController::class,'create']);
-Route::post('/crearInventario',[InventarioController::class,'store'])->name('inventario.store');
+Route::post('/crearInventario',[InventarioController::class,'store'])->name('product.store');
+
+Route::get('/formularioVenta',[VentaController::class,'create']);
+Route::post('/crearVenta',[VentaController::class,'store'])->name('product.store');

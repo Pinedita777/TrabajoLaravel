@@ -14,19 +14,31 @@
 @csrf
 
 <label>
-    Ingrese el nombre del producto:
+    Ingrese su nombre :
     <br>
     <input type="text" name="name">
 </label>
 <br>
 <label>
-    Ingrese el precio del producto: 
+    Ingrese la primera nota: 
     <br>
-    <input type="number" name="price">
+    <input type="number" name="num1">
 </label>
-<br><br>
+<br>
+<label>
+    Ingrese la segunda nota:
+<br>
+    <input type="number" name="num2">
+<br>
+</label>
 
-<button type="submit">Enviar Formulario:</button>
+<label>
+    Ingrese la tercera nota:
+<br>
+    <input type="number" name="num3">
+<br>
+</label>
+<button type="submit">Enviar notas:</button>
 </form>
 
 </body>
